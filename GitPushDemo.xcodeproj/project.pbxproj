@@ -13,6 +13,7 @@
 		C71D1D251E86B7D800E091DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71D1D231E86B7D800E091DD /* Main.storyboard */; };
 		C71D1D271E86B7D800E091DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71D1D261E86B7D800E091DD /* Assets.xcassets */; };
 		C71D1D2A1E86B7D800E091DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71D1D281E86B7D800E091DD /* LaunchScreen.storyboard */; };
+		C71D1D341E86B81E00E091DD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D1D331E86B81E00E091DD /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C71D1D261E86B7D800E091DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71D1D291E86B7D800E091DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71D1D2B1E86B7D800E091DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71D1D321E86B81E00E091DD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C71D1D331E86B81E00E091DD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		C71D1D191E86B7D800E091DD /* GitPushDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C71D1D311E86B80300E091DD /* PushLib */,
 				C71D1D1D1E86B7D800E091DD /* AppDelegate.h */,
 				C71D1D1E1E86B7D800E091DD /* AppDelegate.m */,
 				C71D1D201E86B7D800E091DD /* ViewController.h */,
@@ -77,6 +81,15 @@
 				C71D1D1B1E86B7D800E091DD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C71D1D311E86B80300E091DD /* PushLib */ = {
+			isa = PBXGroup;
+			children = (
+				C71D1D321E86B81E00E091DD /* Person.h */,
+				C71D1D331E86B81E00E091DD /* Person.m */,
+			);
+			path = PushLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					C71D1D161E86B7D800E091DD = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NJ94GH7364;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +166,7 @@
 			files = (
 				C71D1D221E86B7D800E091DD /* ViewController.m in Sources */,
 				C71D1D1F1E86B7D800E091DD /* AppDelegate.m in Sources */,
+				C71D1D341E86B81E00E091DD /* Person.m in Sources */,
 				C71D1D1C1E86B7D800E091DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJ94GH7364;
 				INFOPLIST_FILE = GitPushDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengdu.hero.GitPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJ94GH7364;
 				INFOPLIST_FILE = GitPushDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengdu.hero.GitPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
